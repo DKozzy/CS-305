@@ -6,11 +6,11 @@ CS 305 focuses on the essential skills of software security in modern developmen
 
 Key topics in this course included:
 
--- Software Vulnerabilities – Discovering and analyzing flaws in source code.
--- Secure Coding Practices – Refactoring code to improve security posture.
--- Threat Mitigation – Applying encryption, access control, and input validation.
--- Static Analysis Tools – Using Maven Dependency-Check to locate vulnerable libraries.
--- Risk Reporting – Communicating findings to non-technical stakeholders effectively.
+- Software Vulnerabilities – Discovering and analyzing flaws in source code.
+- Secure Coding Practices – Refactoring code to improve security posture.
+- Threat Mitigation – Applying encryption, access control, and input validation.
+- Static Analysis Tools – Using Maven Dependency-Check to locate vulnerable libraries.
+- Risk Reporting – Communicating findings to non-technical stakeholders effectively.
 
 ## What You'll Find Here
 This repository contains Project One and Project Two for CS 305, which focus on the security assessment of a fictional client, Artemis Financial. These projects simulate the real-world process of auditing insecure code, performing a risk analysis, and implementing fixes.
@@ -26,17 +26,28 @@ This repository contains Project One and Project Two for CS 305, which focus on 
 The project helped solidify my understanding of how even small oversights in code can lead to serious vulnerabilities. Learning to identify, report, and remediate these issues prepares me to contribute to secure software design in professional settings. This project strengthened my ability to think critically about security in every phase of the software development lifecycle.
 
 ## Reflection
-Briefly summarize your client, Artemis Financial, and its software requirements.
-Artemis Financial is a fictional financial services company specializing in savings plans, insurance, and retirement services. The company requested a full security audit of its legacy software application, along with updated practices to improve secure communication and reduce vulnerabilities in its codebase and dependencies.
+## Who was the client? What issue did the company want you to address?
+The client, Artemis Financial, is a fictional financial services company that manages customer accounts and sensitive financial data. They needed a complete security audit of their software application to uncover vulnerabilities and reduce their risk profile. My responsibility was to identify weak points in their codebase, reduce dependency-related vulnerabilities, and improve their communication protocols through SSL encryption.
 
-## What did you do well when you found your client’s software security vulnerabilities? Why is it important to code securely?
-I was particularly effective at identifying outdated dependencies and hardcoded credentials. I also recognized insufficient input validation and a lack of secure communication protocols. Secure coding is crucial because it prevents data breaches, protects user privacy, and upholds business reputation—especially in industries like finance, where trust is paramount.
+## What did you do well when finding software vulnerabilities? Why is secure coding important?
+I was especially thorough in the manual review, spotting logical flaws in user authentication, hardcoded secrets, and unsafe input handling. Secure coding is vital because poor security can result in data breaches, system downtime, and reputational damage. Secure practices ensure that data remains confidential and systems remain trustworthy.
 
-## Which part of the vulnerability assessment was challenging or helpful to you?
-The most challenging part was the manual code review. It required attention to detail and a deep understanding of the application’s logic. However, this process was also the most educational—it taught me how to spot insecure patterns that automated tools might miss.
+## What part of the vulnerability assessment was challenging or helpful?
+The manual review was the most intensive but also the most rewarding. It helped me understand how minor oversights—like unvalidated input or outdated libraries—can create exploitable paths for attackers. Static analysis tools like OWASP Dependency-Check were helpful in pinpointing vulnerable packages that might otherwise be overlooked.
 
-## How did you increase layers of security? In the future, what would you use to assess vulnerabilities and decide which mitigation techniques to use?
-I increased layers of security by applying input validation, encrypting sensitive data, replacing outdated libraries, and removing hardcoded values. In future assessments, I would use tools like OWASP ZAP and Snyk, combined with regular static and dynamic code reviews to maintain layered defense strategies.
+## How did you increase layers of security, and what would you use in the future?
+I applied multiple security layers, including code refactoring for safer logic flow, enforcing stronger access control, and implementing encrypted communications using a self-signed SSL certificate. In the future, I’d continue using tools like Dependency-Check and incorporate others like SonarQube or Burp Suite to get a broader perspective on vulnerabilities. I would also apply threat modeling to better prioritize mitigation strategies.
 
-## How did you make certain the code and software application were functional and secure?
-After refactoring the code, I performed Maven builds, tested the SSL certificate configuration, and validated that data loading and application features still functioned as intended. I reran the dependency scans to confirm that vulnerabilities had been reduced significantly without introducing new ones.
+## How did you ensure the application was secure and functional after changes?
+After each round of changes, I reran tests, verified Maven builds, and reviewed output logs to ensure no new issues were introduced. I also re-scanned the project with Dependency-Check to confirm that the vulnerability count was significantly reduced. The final count dropped from over 200 vulnerabilities to under 60, showing clear improvement.
+
+## What tools or practices might help in the future?
+Practices like input sanitization, avoiding hardcoded credentials, and using strong encryption libraries will always be foundational. Tools such as OWASP ZAP, SonarLint, and key management systems like HashiCorp Vault would further elevate future projects.
+
+## What could you show employers from this project?
+This project serves as a comprehensive example of my ability to conduct a full-cycle vulnerability assessment, apply best security practices, and produce clean, secure, and functional code. The documented improvement—from risk identification to mitigation—demonstrates technical depth, accountability, and professional readiness for software security roles.
+
+## Future Applications
+The skills I developed in CS 305 are highly transferable to software engineering, cybersecurity, and DevSecOps roles. Whether it’s identifying vulnerabilities, encrypting data transmission, or applying best practices for secure code, this course has provided a strong foundation in building and maintaining secure systems. These skills will serve me well in future work environments that require secure communication, reliable applications, and resilient infrastructure.
+
+Thank you for visiting this repository! I hope it provides a clear representation of my software security knowledge and my ability to apply those skills in real-world scenarios.
